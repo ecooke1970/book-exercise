@@ -71,7 +71,14 @@ public class Book
      */
     public void printDetails()
     {
-        System.out.println("Title: " + title + ", Author: " + author + " , Pages: " + pages);
+        if (refNumber.length() > 0)
+        {
+        System.out.println("Title: " + title + ", Author: " + author + " , Pages: " + pages + " , Reference #: " + refNumber);
+        }
+        else
+        {
+        System.out.println("Title: " + title + ", Author: " + author + " , Pages: " + pages + " , Reference #: zzz");
+        }
     }
     
     /**
@@ -89,4 +96,5 @@ public class Book
     {
         return refNumber;
     }
+    
 }
