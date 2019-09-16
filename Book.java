@@ -53,7 +53,7 @@ public class Book
      */
     public void printAuthor()
     {
-        System.out.println("The author is: " + author);
+        System.out.println("Author: " + author);
     }
     
     /**
@@ -61,6 +61,14 @@ public class Book
      */
     public void printTitle()
     {
-        System.out.println("The title is: " + title);
+        System.out.println("Title: " + title);
+    }
+    
+    /**
+     * Prints out detailed information about the book
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author + " , Pages: " + pages);
     }
 }
